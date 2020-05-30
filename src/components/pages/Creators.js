@@ -1,9 +1,11 @@
 import React from 'react';
+import CreatorList from '../creators/CreatorList';
 
 const Creators = () => {
     return (
         <div>
-            <h2>Creators</h2>
+            <h1 className='my-1'>Creators</h1>
+            <CreatorList />
         </div>
     );
 };

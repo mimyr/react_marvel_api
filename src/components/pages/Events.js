@@ -1,9 +1,11 @@
 import React from 'react';
+import EventList from '../events/EventList';
 
 const Events = () => {
     return (
         <div>
-            <h2>Events</h2>
+            <h1 className='my-1'>Events</h1>
+            <EventList />
         </div>
     );
 };

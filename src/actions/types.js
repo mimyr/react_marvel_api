@@ -4,4 +4,10 @@ export const ERROR_CHARACTERS = 'ERROR_CHARACTERS';
 export const GET_COMICS = 'GET_COMICS';
 export const ERROR_COMICS = 'ERROR_COMICS';
 
+export const GET_CREATORS = 'GET_CREATORS';
+export const ERROR_CREATORS = 'ERROR_CREATORS';
+
+export const GET_EVENTS = 'GET_EVENTS';
+export const ERROR_EVENTS = 'ERROR_EVENTS';
+
 export const SET_LOADING = 'SET_LOADING';

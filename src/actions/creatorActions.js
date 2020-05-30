@@ -1,21 +1,21 @@
-import { GET_COMICS, ERROR_COMICS } from './types';
+import { GET_CREATORS, ERROR_CREATORS } from './types';
 import axios from 'axios';
 import setAuth from '../utils/setAuth';
 
-export const getComics = () => async (dispatch) => {
+export const getCreators = () => async (dispatch) => {
     try {
         const auth = setAuth();
         const res = await axios.get(
-            `http://gateway.marvel.com/v1/public/comics?${auth}`
+            `http://gateway.marvel.com/v1/public/creators?${auth}`
         );
         dispatch({
-            type: GET_COMICS,
+            type: GET_CREATORS,
             payload: res.data.data.results,
         });
     } catch (err) {
         dispatch({
-            type: ERROR_COMICS,
-            payload: err.status,
+            type: ERROR_CREATORS,
+            payload: err.response.data,
         });
     }
 };

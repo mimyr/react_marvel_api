@@ -1,6 +1,12 @@
-import { GET_CHARACTERS, CHARACTERS_ERROR } from '../types';
+import { GET_CHARACTERS, ERROR_CHARACTERS } from '../actions/types';
 
-export default (state, action) => {
+const initialState = {
+    characters: [],
+    loading: true,
+    error: null,
+};
+
+export default (state = initialState, action) => {
     const { type, payload } = action;
     switch (type) {
         case GET_CHARACTERS:
@@ -9,7 +15,8 @@ export default (state, action) => {
                 characters: payload,
                 loading: false,
             };
-        case CHARACTERS_ERROR:
+        case ERROR_CHARACTERS:
+            console.error(payload);
             return {
                 ...state,
                 error: payload,

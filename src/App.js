@@ -12,16 +12,14 @@ import Events from './components/pages/Events';
 import Series from './components/pages/Series';
 import Stories from './components/pages/Stories';
 
-import './App.css';
-
 const App = () => {
     return (
         <Provider store={store}>
             <Router>
-                <div className='App'>
+                <div className='App antialised text-gray-900'>
                     <Navbar />
 
-                    <div className='container'>
+                    <div className='container mx-auto'>
                         <Switch>
                             <Route exact path='/' component={Home} />
                             <Route

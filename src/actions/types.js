@@ -10,4 +10,8 @@ export const ERROR_CREATORS = 'ERROR_CREATORS';
 export const GET_EVENTS = 'GET_EVENTS';
 export const ERROR_EVENTS = 'ERROR_EVENTS';
 
-export const SET_LOADING = 'SET_LOADING';
+export const GET_SERIES = 'GET_SERIES';
+export const ERROR_SERIES = 'ERROR_SERIES';
+
+export const GET_STORIES = 'GET_STORIES';
+export const ERROR_STORIES = 'ERROR_STORIES';

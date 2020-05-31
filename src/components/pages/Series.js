@@ -1,9 +1,11 @@
 import React from 'react';
+import SeriesList from '../series/SeriesList';
 
 const Series = () => {
     return (
         <div>
-            <h2>Series</h2>
+            <h1 className='my-1'>Series</h1>
+            <SeriesList />
         </div>
     );
 };
